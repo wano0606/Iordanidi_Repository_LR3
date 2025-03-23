@@ -27,6 +27,14 @@ void calculateRemainder(int A, int B, int C) {
 
 void calculateQuotient(int A, int B, int C) {
     //Разрабатывается Андреевым А. - ветка branch_fun_3
+    if (C == 0) {
+        cout << "Ошибка: Деление на ноль!" << endl;
+        return; // Завершение функции при ошибке
+    }
+
+    int sum = A + B;
+    int quotient = sum / C;
+    cout << "2. Целая часть от деления суммы A и B на C: " << quotient << endl;
 }
 
 int main() {
