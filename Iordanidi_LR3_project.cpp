@@ -5,6 +5,12 @@ using namespace std;
 
 void input(int &A, int &B, int &C) {
     //Разрабатывается Ивановым И. - ветка branch_fun_1
+    cout << "Введите целое число A: ";
+    cin >> A;
+    cout << "Введите целое число B: ";
+    cin >> B;
+    cout << "Введите целое число C: ";
+    cin >> C;
 }
 
 void calculateRemainder(int A, int B, int C) {
