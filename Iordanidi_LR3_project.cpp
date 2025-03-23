@@ -15,6 +15,14 @@ void input(int &A, int &B, int &C) {
 
 void calculateRemainder(int A, int B, int C) {
     //Разрабатывается Петровым П. - ветка branch_fun_2
+    if (C == 0) {
+        cout << "Ошибка: Деление на ноль!" << endl;
+        return; // Завершение функции при ошибке
+    }
+
+    int sum = A + B;
+    int remainder = sum % C;
+    cout << "1. Остаток от деления суммы A и B на C: " << remainder << endl;
 }
 
 void calculateQuotient(int A, int B, int C) {
